@@ -1,0 +1,29 @@
+:host {
+  //padding: 10px;
+  flex: 1;
+
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+
+}
+
+.str {
+  flex: 1;
+}
+
+p-panel {
+  padding: 10px 10px 0 10px;
+  &:last-child {
+    padding-bottom: 10px;
+  }
+}
+
+::ng-deep p-panel { //p-panel flexbox fix
+  display: flex;
+
+  > div {
+    flex: 1;
+  }
+}
+

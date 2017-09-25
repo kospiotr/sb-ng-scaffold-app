@@ -1,0 +1,68 @@
+:host ::ng-deep .west {
+  background: #414B56 linear-gradient(to left, #38414a 0%, #414B56 9px);
+  overflow-y: auto;
+  width: 200px;
+  //box-shadow: 0 0 9px 2px rgba(0, 0, 0, 0.3);
+  animation: menu-animation 700ms 700ms backwards;
+}
+
+@keyframes menu-animation {
+  0% {
+    transform: translateX(-100%);
+  }
+}
+
+.menu {
+
+  a, .profile {
+
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  .logo {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 0 0 0;
+    border: none;
+    opacity: 1;
+  }
+
+  .profile {
+    text-align: center;
+    padding: 16px;
+
+    img {
+      border: none;
+      width: 56px;
+      height: 56px;
+      border-radius: 29px;
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+      display: block;
+      margin: 0 auto 0.3em;
+    }
+  }
+
+  a {
+
+    width: 100%;
+    line-height: 30px;
+    display: block;
+    padding: 0 20px;
+    cursor: pointer;
+    //border-top: 1px solid #555555;
+    box-sizing: border-box;
+    opacity: 0.8;
+
+    &.active {
+      background: #3a434d;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

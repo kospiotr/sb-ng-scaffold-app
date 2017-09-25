@@ -1,0 +1,21 @@
+<div class="app-wrapper">
+  <div class="west aside" [ngClass]="{active: westActive}">
+    <ng-content select="[region=west]"></ng-content>
+  </div>
+  <div class="center">
+    <div class="north">
+      <ng-content select="[region=north]"></ng-content>
+    </div>
+    <!--<div >-->
+    <!--<button (click)="toggleWest()">Toggle west</button>-->
+    <!--<button (click)="toggleEast()">Toggle east</button>-->
+    <ng-content class="main"></ng-content>
+    <!--</div>-->
+    <div class="south">
+      <ng-content select="[region=south]"></ng-content>
+    </div>
+  </div>
+  <div class="east aside">
+    <ng-content select="[region=east]"></ng-content>
+  </div>
+</div>

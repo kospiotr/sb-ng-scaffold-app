@@ -1,0 +1,16 @@
+<flex-column-layout>
+  <div region="west" class="menu">
+    <a [routerLink]="['/']" class="logo">
+      <strong>ACME</strong>Company
+    </a>
+
+    <div class="profile">
+      <img class="v-icon" src="https://demo.vaadin.com/dashboard/VAADIN/themes/dashboard/img/profile-pic-300px.jpg">
+      <div>guest</div>
+    </div>
+
+    <a [routerLink]="['work-items/list']" routerLinkActive="active">Work Items</a>
+    <a [routerLink]="['about']" routerLinkActive="active"> About</a>
+  </div>
+  <router-outlet></router-outlet>
+</flex-column-layout>
