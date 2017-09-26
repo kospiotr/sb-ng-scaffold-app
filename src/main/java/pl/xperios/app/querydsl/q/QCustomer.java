@@ -44,9 +44,9 @@ public class QCustomer extends com.querydsl.sql.RelationalPathBase<Customer> {
 
     public final com.querydsl.sql.PrimaryKey<Customer> primary = createPrimaryKey(customerId);
 
-    public final com.querydsl.sql.ForeignKey<Store> customerStoreFk = createForeignKey(storeId, "store_id");
-
     public final com.querydsl.sql.ForeignKey<Address> customerAddressFk = createForeignKey(addressId, "address_id");
+
+    public final com.querydsl.sql.ForeignKey<Store> customerStoreFk = createForeignKey(storeId, "store_id");
 
     public final com.querydsl.sql.ForeignKey<Payment> _paymentCustomerFk = createInvForeignKey(customerId, "customer_id");
 

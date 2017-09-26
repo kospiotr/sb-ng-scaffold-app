@@ -1,0 +1,1 @@
+./mvnw clean generate-sources -P querydsl-generate

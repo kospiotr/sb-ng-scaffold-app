@@ -40,9 +40,9 @@ public class QRental extends com.querydsl.sql.RelationalPathBase<Rental> {
 
     public final com.querydsl.sql.PrimaryKey<Rental> primary = createPrimaryKey(rentalId);
 
-    public final com.querydsl.sql.ForeignKey<Customer> rentalCustomerFk = createForeignKey(customerId, "customer_id");
-
     public final com.querydsl.sql.ForeignKey<Staff> rentalStaffFk = createForeignKey(staffId, "staff_id");
+
+    public final com.querydsl.sql.ForeignKey<Customer> rentalCustomerFk = createForeignKey(customerId, "customer_id");
 
     public final com.querydsl.sql.ForeignKey<Inventory> rentalInventoryFk = createForeignKey(inventoryId, "inventory_id");
 

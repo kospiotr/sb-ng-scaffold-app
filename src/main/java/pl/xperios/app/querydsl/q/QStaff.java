@@ -48,9 +48,9 @@ public class QStaff extends com.querydsl.sql.RelationalPathBase<Staff> {
 
     public final com.querydsl.sql.PrimaryKey<Staff> primary = createPrimaryKey(staffId);
 
-    public final com.querydsl.sql.ForeignKey<Store> staffStoreFk = createForeignKey(storeId, "store_id");
-
     public final com.querydsl.sql.ForeignKey<Address> staffAddressFk = createForeignKey(addressId, "address_id");
+
+    public final com.querydsl.sql.ForeignKey<Store> staffStoreFk = createForeignKey(storeId, "store_id");
 
     public final com.querydsl.sql.ForeignKey<Payment> _paymentStaffFk = createInvForeignKey(staffId, "staff_id");
 

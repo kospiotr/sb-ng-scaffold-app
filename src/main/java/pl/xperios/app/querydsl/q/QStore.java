@@ -34,9 +34,9 @@ public class QStore extends com.querydsl.sql.RelationalPathBase<Store> {
 
     public final com.querydsl.sql.PrimaryKey<Store> primary = createPrimaryKey(storeId);
 
-    public final com.querydsl.sql.ForeignKey<Staff> storeStaffFk = createForeignKey(managerStaffId, "staff_id");
-
     public final com.querydsl.sql.ForeignKey<Address> storeAddressFk = createForeignKey(addressId, "address_id");
+
+    public final com.querydsl.sql.ForeignKey<Staff> storeStaffFk = createForeignKey(managerStaffId, "staff_id");
 
     public final com.querydsl.sql.ForeignKey<Staff> _staffStoreFk = createInvForeignKey(storeId, "store_id");
 

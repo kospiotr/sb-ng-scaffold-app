@@ -40,11 +40,11 @@ public class QPayment extends com.querydsl.sql.RelationalPathBase<Payment> {
 
     public final com.querydsl.sql.PrimaryKey<Payment> primary = createPrimaryKey(paymentId);
 
-    public final com.querydsl.sql.ForeignKey<Customer> paymentCustomerFk = createForeignKey(customerId, "customer_id");
+    public final com.querydsl.sql.ForeignKey<Rental> paymentRentalFk = createForeignKey(rentalId, "rental_id");
 
     public final com.querydsl.sql.ForeignKey<Staff> paymentStaffFk = createForeignKey(staffId, "staff_id");
 
-    public final com.querydsl.sql.ForeignKey<Rental> paymentRentalFk = createForeignKey(rentalId, "rental_id");
+    public final com.querydsl.sql.ForeignKey<Customer> paymentCustomerFk = createForeignKey(customerId, "customer_id");
 
     public QPayment(String variable) {
         super(Payment.class, forVariable(variable), "null", "payment");
