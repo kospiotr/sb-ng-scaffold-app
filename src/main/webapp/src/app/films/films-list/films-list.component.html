@@ -1,5 +1,5 @@
-<p-panel class="flexbox-wrapper flex" header="Films">
-  <div class="ui-g-12 ui-md-4">
+<p-panel class="flexbox-wrapper flex padding" header="Films">
+  <div class="toolbar">
     <span>
       <label>Name</label>
       <input pinputtext="" type="text">
@@ -8,8 +8,10 @@
   </div>
   <ag-grid-angular [gridOptions]="gridOptions"
                    [rowData]="page.content"
+                   [rowHeight]=20
                    [pagination]=true
                    [headerHeight]="35"
+                   (gridReady)="gridReady()"
                    class="str ag-theme-material"
   >
   </ag-grid-angular>

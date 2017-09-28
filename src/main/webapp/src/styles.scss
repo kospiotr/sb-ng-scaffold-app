@@ -13,6 +13,7 @@
 
 body .ui-widget-content {
   border: 0;
+  font-size: 0.8em;
 }
 
 .ag-theme-material .ag-header-cell, .ag-theme-material .ag-header-group-cell {
@@ -21,4 +22,12 @@ body .ui-widget-content {
 
 .ag-paging-panel {
   height: 35px !important;
+}
+
+.padding {
+  padding: 10px;
+}
+
+.ag-theme-material .ag-cell {
+  line-height: normal;
 }

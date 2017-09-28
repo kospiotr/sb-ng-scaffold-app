@@ -22,13 +22,13 @@ export class FilmsListComponent implements OnInit {
     this.gridOptions.columnDefs = [
       {
         headerName: "Title",
-        field: "title",
-        width: 250
+        field: "title"
       },
       {
         headerName: "Release Year",
         field: "releaseYear",
-        width: 200
+        width: 200,
+        // suppressSizeToFit: true
       }
     ];
   }
@@ -37,6 +37,11 @@ export class FilmsListComponent implements OnInit {
     this.loadRecords(<FilmRequest>{
       page: 0
     });
+  }
+
+  gridReady() {
+    console.log('ready');
+    this.gridOptions.api.sizeColumnsToFit();
   }
 
   loadRecords(filmRequest: FilmRequest) {
