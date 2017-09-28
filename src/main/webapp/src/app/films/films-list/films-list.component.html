@@ -1,0 +1,17 @@
+<p-panel class="flexbox-wrapper flex" header="Films">
+  <div class="ui-g-12 ui-md-4">
+    <span>
+      <label>Name</label>
+      <input pinputtext="" type="text">
+    </span>
+    <button pButton type="button" icon="fa-search"></button>
+  </div>
+  <ag-grid-angular [gridOptions]="gridOptions"
+                   [rowData]="page.content"
+                   [pagination]=true
+                   [headerHeight]="35"
+                   class="str ag-theme-material"
+  >
+  </ag-grid-angular>
+</p-panel>
+

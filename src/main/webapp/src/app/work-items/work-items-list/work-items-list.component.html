@@ -1,7 +1,0 @@
-<p-dataTable [value]="page.data" scrollable="true" [paginator]="true" [rows]="page.rows"
-             [totalRecords]="page.totalElements" [lazy]="true" loadingIcon="fa-spinner"
-             class="grid"
-             (onLazyLoad)="loadRecords($event)">
-  <p-column field="id" header="ID" [style]="{'width':'50px'}"></p-column>
-  <p-column field="name" header="Name"></p-column>
-</p-dataTable>

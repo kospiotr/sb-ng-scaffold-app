@@ -8,7 +8,7 @@ import {AppComponent} from "./app.component";
 import {HomepageModule} from "./homepage/homepage.module";
 import {AboutModule} from "./about/about.module";
 import {AppCommonModule} from "../common/appCommon.module";
-import {WorkItemsModule} from "./work-items/work-items.module";
+import {FilmsModule} from "./films/films.module";
 
 @NgModule({
   declarations: [
@@ -23,7 +23,7 @@ import {WorkItemsModule} from "./work-items/work-items.module";
     AppRoutingModule,
     HomepageModule,
     AboutModule,
-    WorkItemsModule
+    FilmsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

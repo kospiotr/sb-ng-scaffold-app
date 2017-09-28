@@ -1,0 +1,24 @@
+@import "assets/layout/theme-dark-blue.css";
+@import "assets/layout/layout-dark-blue.css";
+
+.flexbox-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+body .ui-widget-content {
+  border: 0;
+}
+
+.ag-theme-material .ag-header-cell, .ag-theme-material .ag-header-group-cell {
+  line-height: 35px !important;
+}
+
+.ag-paging-panel {
+  height: 35px !important;
+}
