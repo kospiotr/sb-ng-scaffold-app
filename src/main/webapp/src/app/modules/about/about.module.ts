@@ -4,7 +4,7 @@ import {FormsModule} from "@angular/forms";
 import {AboutComponent} from "./about/about.component";
 import {AboutRoutes} from "./about.routes";
 import {PanelModule} from "primeng/primeng";
-import {AppCommonModule} from "../../common/appCommon.module";
+import {AppCommonModule} from "../../../common/appCommon.module";
 
 @NgModule({
   imports: [

@@ -1,0 +1,29 @@
+:host {
+  flex: 1;
+
+  display: flex;
+  flex-flow: column;
+  margin: 10px;
+  align-content: stretch;
+
+  > *:not(:first-child) {
+    margin-top: 5px;
+  }
+  > *:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+.grid-wrapper {
+  flex: 1;
+  display: flex;
+  align-content: stretch;
+
+  > * {
+    flex: 1;
+  }
+}
+
+.toolbar-bottom {
+  align-self: flex-end;
+}

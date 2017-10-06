@@ -3,14 +3,9 @@
     <a [routerLink]="['/']" class="logo">
       <strong>ACME</strong>Company
     </a>
-
-    <div class="profile">
-      <img class="v-icon" src="https://demo.vaadin.com/dashboard/VAADIN/themes/dashboard/img/profile-pic-300px.jpg">
-      <div>guest</div>
-    </div>
-
     <a [routerLink]="['films/list']" routerLinkActive="active">Films</a>
     <a [routerLink]="['about']" routerLinkActive="active">About</a>
   </div>
+  <app-header region="north"></app-header>
   <router-outlet></router-outlet>
 </flex-column-layout>

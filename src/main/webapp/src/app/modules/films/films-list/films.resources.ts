@@ -3,7 +3,7 @@ import {Http} from "@angular/http";
 import {Observable} from "rxjs";
 import "rxjs/add/operator/map";
 import {Film} from "./film.model";
-import {Pageable} from "../../../common/pageable";
+import {Pageable} from "../../../../common/pageable";
 
 @Injectable()
 export class FilmsResources {

@@ -1,7 +1,7 @@
 import {Component, OnInit} from "@angular/core";
 import {FilmsResources} from "./films.resources";
 import {Film} from "./film.model";
-import {Pageable} from "../../../common/pageable";
+import {Pageable} from "../../../../common/pageable";
 import "rxjs/add/operator/toPromise";
 import "rxjs/add/operator/delay";
 import {GridOptions} from "ag-grid";
@@ -37,6 +37,8 @@ export class FilmsListComponent implements OnInit {
     this.loadRecords(<FilmRequest>{
       page: 0
     });
+    setTimeout(() => this.gridOptions.api.doLayout(), 500);
+
   }
 
   gridReady() {

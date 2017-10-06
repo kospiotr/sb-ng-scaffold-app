@@ -6,6 +6,14 @@
   animation: menu-animation 700ms 700ms backwards;
 }
 
+:host ::ng-deep .center {
+  background-color: #f4f8fc;
+}
+
+:host ::ng-deep .north {
+  background-color: white;
+}
+
 @keyframes menu-animation {
   0% {
     transform: translateX(-100%);

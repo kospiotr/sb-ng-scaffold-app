@@ -8,17 +8,18 @@ import {AgGridModule} from "ag-grid-angular/main";
 import {PanelModule} from "primeng/components/panel/panel";
 import {ToolbarModule} from "primeng/components/toolbar/toolbar";
 import {SplitButtonModule} from "primeng/components/splitbutton/splitbutton";
+import {ButtonModule} from "primeng/components/button/button";
 
 @NgModule({
   imports: [
     CommonModule,
     FilmsRoutes,
-    InputTextModule,
     PanelModule,
     ToolbarModule,
     SplitButtonModule,
     SharedModule,
-
+    InputTextModule,
+    ButtonModule,
     AgGridModule.withComponents([])
   ],
   declarations: [FilmsListComponent],
